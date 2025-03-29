@@ -4,7 +4,7 @@ function App() {
     const [message, setMessage] = useState('');
 
     useEffect(() => {
-        fetch('https://coller1.onrender.com/')
+        fetch('https://bubble-game-yvyo.onrender.com/')  // ← رابط الخادم الجديد
             .then(response => response.text())
             .then(data => setMessage(data))
             .catch(error => console.error('Error fetching data:', error));
